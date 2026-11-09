@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Illustrated Shahnama Manuscripts, 1400–1700 — Catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.8125rem);
+  --text-sm:clamp(0.8125rem,0.78rem + 0.2vw,0.9375rem);
+  --text-base:clamp(0.9375rem,0.9rem + 0.2vw,1.0625rem);
+  --text-lg:clamp(1.125rem,1rem + 0.6vw,1.375rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;
+  --bg:#eef5fb; --surface:#f8fbfe; --surface-2:#e2ecf6; --border:#c8d8e8; --divider:#dae5f0;
+  --text:#1b2533; --muted:#4f5d6e; --faint:#7d8a9a;
+  --lapis:#1e3a7b; --lapis-hover:#152b5c; --lapis-tint:#dfe5f2;
+  --vermilion:#a8361f; --gold:#a07a2c;
+  --font-display:'EB Garamond',Garamond,Georgia,serif; --font-body:'EB Garamond',Garamond,Georgia,serif;
+  --r:6px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:var(--text-base);line-height:1.5}
+a{color:var(--lapis)} a:hover{color:var(--lapis-hover)}
+.wrap{max-width:1440px;margin:0 auto;padding:0 clamp(var(--space-4),3vw,var(--space-10))}
+header{border-bottom:1px solid var(--border);padding-block:var(--space-8) var(--space-6)}
+.hero{width:100%;line-height:0;border-bottom:1px solid var(--gold)}.hero.bottom{border-bottom:0;border-top:1px solid var(--gold)}.hero img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover}
+.thesis{padding-block:var(--space-10) calc(var(--space-16) * 2);background:linear-gradient(180deg,#efe6d3 0%,var(--bg) 420px)}
+.thesis-title{font-family:'EB Garamond',Garamond,Georgia,serif;font-weight:700;color:#000;font-size:clamp(2rem,1.5rem + 2vw,3rem);margin:0;max-width:none}
+.thesis .notes-sec{margin-top:var(--space-6)}
+.notes-sec>details>summary{border-bottom:1px solid var(--gold);padding-bottom:var(--space-2);width:70%}
+.notes-sec>details>summary .muted{font-variant:all-small-caps;letter-spacing:.06em;font-size:var(--text-base)}
+.ncard{border-left:4px solid var(--sec,var(--lapis))}
+.divider-line{border:0;border-top:1px solid #c4c9cf;margin:0}
+.method summary{cursor:pointer;display:flex;align-items:baseline;gap:var(--space-3);list-style:none}
+.method summary::-webkit-details-marker{display:none}
+.method summary::before{content:'▸';color:var(--muted)}.method[open] summary::before{content:'▾'}
+.method summary h2{margin:0}.method .notes{margin-top:var(--space-4)}
+.method-sec{padding-top:var(--space-8);padding-bottom:var(--space-8)}
+.eyebrow{font-size:var(--text-xs);letter-spacing:.12em;text-transform:uppercase;color:var(--vermilion);font-weight:700;margin:0 0 var(--space-2)}
+h1{font-family:var(--font-display);font-weight:600;font-size:var(--text-xl);line-height:1.15;margin:0 0 var(--space-3);max-width:28ch}
+.lede{color:var(--muted);max-width:78ch;margin:0;font-size:var(--text-sm)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--space-3);margin-top:var(--space-6)}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:var(--space-3) var(--space-4)}
+.stat b{display:block;font-family:var(--font-display);font-size:var(--text-lg);font-weight:600;font-variant-numeric:tabular-nums}
+.stat span{font-size:var(--text-xs);color:var(--muted)}
+section{padding-block:var(--space-6)}
+h2{font-size:var(--text-lg);font-weight:700;margin:0 0 var(--space-3)}
+.sub{font-size:var(--text-xs);color:var(--muted);margin:0 0 var(--space-3)}
+/* overview matrix */
+.matrix-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--r)}
+table.matrix{border-collapse:collapse;width:100%;font-size:var(--text-sm);min-width:560px}
+.matrix th,.matrix td{padding:var(--space-2) var(--space-3);border-bottom:1px solid var(--divider);text-align:center;font-variant-numeric:tabular-nums}
+.matrix th:first-child,.matrix td:first-child{text-align:left}
+.matrix thead th{white-space:nowrap;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.matrix td.cell{cursor:pointer;position:relative}
+.matrix td.cell:hover{outline:2px solid var(--lapis);outline-offset:-2px}
+.matrix td.cell.active{outline:2px solid var(--vermilion);outline-offset:-2px}
+.matrix td.zero{color:var(--faint);cursor:default}
+.dot{display:inline-block;width:.6rem;height:.6rem;border-radius:50%;margin-right:var(--space-2);vertical-align:middle}
+/* filters */
+.filters{background:var(--surface-2);border-block:1px solid var(--border);padding-block:var(--space-3)}
+.frow{display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-4);align-items:center}
+.frow+.frow{margin-top:var(--space-2)}
+.flabel{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;min-width:5.5rem}
+.chips{display:flex;flex-wrap:wrap;gap:var(--space-1)}
+.chip{font:inherit;font-size:var(--text-xs);font-weight:500;border:1px solid var(--border);background:var(--surface);color:var(--text);padding:var(--space-1) var(--space-3);border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:var(--space-1);}
+.chip:hover{border-color:var(--lapis)}
+.chip[aria-pressed="true"]{background:var(--lapis);border-color:var(--lapis);color:#fff}
+.chip .n{opacity:.7;font-variant-numeric:tabular-nums}
+select{max-width:min(340px,100%)}
+select,input[type=search]{font:inherit;font-size:var(--text-sm);border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:var(--r);padding:var(--space-2) var(--space-3);min-height:2.25rem}
+input[type=search]{min-width:min(320px,100%);flex:1}
+.btn{font:inherit;font-size:var(--text-sm);font-weight:500;border:1px solid var(--lapis);background:var(--lapis);color:#fff;border-radius:var(--r);padding:var(--space-2) var(--space-4);cursor:pointer;min-height:2.25rem}
+.btn:hover{background:var(--lapis-hover)}
+.btn.ghost{background:transparent;color:var(--lapis)}
+.btn.ghost:hover{background:var(--lapis-tint)}
+.notes-sec{margin-top:var(--space-6)}
+.notes-sec>details>summary{cursor:pointer;display:flex;align-items:baseline;gap:var(--space-3);list-style:none}
+.notes-sec>details>summary::-webkit-details-marker{display:none}
+.notes-sec>details>summary h2{font-family:var(--font-display);font-size:var(--text-lg);margin:0}
+.notes-sec>details>summary::before{content:'▸';color:var(--muted)}.notes-sec>details[open]>summary::before{content:'▾'}
+.notes-bar{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center;margin:var(--space-3) 0}
+a.btn{text-decoration:none;display:inline-flex;align-items:center}.small{font-size:var(--text-xs)}
+#tag-chips{margin-bottom:var(--space-3)}
+.copy-box{width:100%;min-height:5rem;font:12px ui-monospace,monospace;margin-bottom:var(--space-3);border:1px solid var(--border);border-radius:var(--r);padding:var(--space-2)}
+.ncards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-3)}
+.ncard{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2)}
+.ncard h3{font-size:var(--text-base);margin:0;font-weight:700}.ncard .t-shelf{display:block}
+.ntags{display:flex;flex-wrap:wrap;gap:var(--space-1)}.ntag{white-space:nowrap;display:inline-block;font-size:var(--text-xs);background:var(--lapis-tint);color:var(--lapis);border-radius:999px;padding:1px var(--space-2)}
+.ncard p{margin:0;font-size:var(--text-sm);white-space:pre-wrap}.ncard .nonote{color:var(--faint);font-style:normal}
+.nimgs summary{cursor:pointer;font-size:var(--text-sm);color:var(--lapis)}.nimgs ul{margin:var(--space-2) 0 0;padding-left:1.1rem;font-size:var(--text-sm)}.nimgs li{margin-bottom:var(--space-2)}
+.thumb{display:block;border:1px solid var(--border);border-radius:var(--r);padding:0;margin:0 0 var(--space-1);background:var(--surface-2);cursor:zoom-in;overflow:hidden;max-width:100%}
+.thumb img{display:block;width:100%;max-height:180px;object-fit:cover}
+.viewer{width:min(1100px,94vw);height:min(820px,90vh);padding:0;border:1px solid var(--border);border-radius:var(--r);background:var(--surface)}
+.viewer::backdrop{background:rgba(15,25,40,.6)}.viewer[open]{display:flex;flex-direction:column}
+.vbar{display:flex;justify-content:space-between;align-items:center;padding:var(--space-2) var(--space-4);border-bottom:1px solid var(--divider)}
+.viewer iframe{flex:1;border:0;width:100%}
+.pf-h{font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:var(--space-2) 0}
+.pf-grid{list-style:none;padding:0;margin:0 0 var(--space-4);display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:var(--space-3);font-size:var(--text-sm)}
+.pf-grid li{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:var(--space-3)}
+.thesis-sub{font-size:var(--text-sm);color:var(--muted);margin-top:var(--space-3);max-width:75ch}.thesis-sub:empty{display:none}
+.flds .fld.cite{color:var(--muted);font-size:var(--text-xs)}
+.xs-band{display:flow-root;background:var(--surface-2);border-block:1px solid var(--border);margin-top:var(--space-6);padding-block:var(--space-4) var(--space-6)}
+.xs-band .notes-sec{margin-top:0}
+.xs-band:has(+.xs-band){border-bottom:0;padding-bottom:0}
+.xs-band+.xs-band{margin-top:0;border-top:0;padding-top:0}
+.xs-image{margin-top:var(--space-6)}.xs-image .xs-imgs{margin-top:0}
+.xs-text{margin-top:var(--space-4);max-width:75ch}.xs-text p{margin:0 0 var(--space-3)}
+.xs-imgs{margin-top:var(--space-4);display:flex;flex-wrap:wrap;gap:var(--space-4) 100px;align-items:flex-start}
+#notes-band{border-top:1px solid #c4c9cf;border-bottom:0}
+.xs-imgs img{display:block;width:auto;max-width:100%;max-height:300px;height:auto;border-radius:var(--r)}
+@media (max-width:700px){.xs-imgs img{width:100%}}
+.ph{display:flex;align-items:center;justify-content:center;height:90px;width:100%;min-width:180px;font-size:var(--text-xs);color:var(--lapis);background:var(--lapis-tint);line-height:1.3;padding:var(--space-2)}
+.flds .fld{margin:0;line-height:1.35;font-size:var(--text-sm)}.flds .fld b{text-transform:capitalize}.flds .fld .thumb{margin-top:var(--space-1)}
+.flds:empty{display:none}
+.ncard .nact{margin-top:auto;display:flex;gap:var(--space-3);align-items:center}.ncard .nact button{font:inherit;font-size:var(--text-xs);background:none;border:0;color:var(--lapis);cursor:pointer;padding:0;text-decoration:underline}
+button.star{font:inherit;font-size:1.15rem;line-height:1;background:none;border:0;padding:var(--space-1);cursor:pointer;color:var(--faint);border-radius:var(--r)}
+button.star:hover{color:var(--gold)}button.star.on{color:var(--gold)}
+button.star:focus-visible{outline:2px solid var(--lapis);outline-offset:1px}
+.star-ic{color:var(--gold)}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+label.tog{font-size:var(--text-sm);display:inline-flex;gap:var(--space-2);align-items:center;cursor:pointer}
+.count{font-size:var(--text-sm);color:var(--muted);margin-left:auto}
+/* main table */
+.tbl-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--r)}
+table.cat{border-collapse:collapse;width:100%;font-size:var(--text-sm);min-width:1320px}
+.cat td:nth-child(2){min-width:240px}.cat td:nth-child(4){min-width:130px}.cat td:nth-child(7){min-width:170px}.cat td:nth-child(10){min-width:170px}
+.cat th[data-k="fav"],.cat td.c-fav{width:2.75rem;min-width:0;padding-right:0}
+.cat thead th{position:sticky;top:0;background:var(--surface-2);text-align:left;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;padding:var(--space-3);border-bottom:1px solid var(--border);white-space:nowrap;cursor:pointer;user-select:none}
+.cat thead th:hover{color:var(--lapis)}
+.cat thead th .arr{opacity:.35;margin-left:var(--space-1)}
+.cat thead th.sorted .arr{opacity:1;color:var(--vermilion)}
+.cat td{padding:var(--space-3);border-bottom:1px solid var(--divider);vertical-align:top}
+.cat tbody tr.row{cursor:pointer}
+.cat tbody tr.row:hover{background:#f4eee2}
+.cat tbody tr.row.open{background:var(--lapis-tint)}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.t-title{font-weight:700;color:var(--text)}
+.t-shelf{display:block;color:var(--muted);font-size:var(--text-xs)}
+.tag{display:inline-block;font-size:var(--text-xs);padding:0 var(--space-2);border-radius:999px;border:1px solid var(--border);white-space:nowrap;color:var(--muted)}
+.tag.sup{border-color:var(--gold);color:var(--gold)}
+.tag.snp{border-color:#2f7d6d;color:#2f7d6d}
+.muted{color:var(--muted)} .faint{color:var(--faint)}
+.reg{white-space:nowrap}
+tr.detail td{background:#f1f6fb;padding:var(--space-4) var(--space-6)}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-4) var(--space-8)}
+.dgrid dt{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.dgrid dd{margin:0 0 var(--space-2)}
+.bib{margin:var(--space-2) 0 0;padding-left:var(--space-5)}
+.bib li{margin-bottom:var(--space-1)}
+.empty{padding:var(--space-10);text-align:center;color:var(--muted)}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-6);font-size:var(--text-sm);color:var(--muted)}
+.notes h3{font-size:var(--text-base);color:var(--text);margin:0 0 var(--space-2)}
+.notes p,.notes ul{margin:0 0 var(--space-2)}
+footer{border-top:1px solid var(--border);padding-block:var(--space-6);font-size:var(--text-xs);color:var(--muted)}
+@media (max-width:640px){.flabel{min-width:100%}.count{margin-left:0;width:100%}}
+.rlink{white-space:nowrap;font-size:.85em}
+</style>
+</head>
+<body>
+<div class="hero"><img src="hero.jpg" alt="Collage of illustrated Shahnama manuscript pages"></div>
+<div class="thesis">
+  <div class="wrap"><p class="eyebrow">Lila Felice Ronen · Class of 2027 · Advised by Fatima Quraishi (thank you)</p>
+  <h1 class="thesis-title">Lila's Shahnama Thesis Working Compiler</h1>
+  <div class="thesis-sub" id="thesis-sub"></div></div>
+  <section class="wrap notes-sec" id="notes-sec">
+    <details id="notes" open>
+      <summary><h2>My starred notes</h2> <span class="muted" id="notes-sum"></span></summary>
+      <div class="notes-bar">
+        <a class="btn ghost" id="sheet-link" target="_blank" rel="noopener">Open Google Sheet ↗</a>
+        <button class="btn ghost" id="copy-new">Copy new starred rows for sheet</button>
+        <span class="muted small" id="notes-sync"></span>
+      </div>
+      <div class="chips" id="tag-chips"></div>
+      <textarea id="copy-box" class="copy-box" readonly hidden aria-label="Rows to paste into the sheet"></textarea>
+      <div class="ncards" id="ncards"></div>
+    </details>
+  </section>
+  <div id="extra-sections"></div>
+</div>
+<hr class="divider-line">
+<header>
+  <div class="wrap">
+    <p class="eyebrow">Shahnama Project corpus · 1400–1700 (with c.1390–1400 borderline copies)</p>
+    <h1>Illustrated Shahnama Manuscripts, 1400–1700</h1>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+<section class="xs-band" id="notes-band"></section>
+
+<main>
+  <section class="wrap" aria-labelledby="ov">
+    <h2 id="ov">Region × century</h2>
+    <p class="sub">Record counts for the current format, institution, and search filters. Click a cell to filter the catalog to that region and century; click again to clear.</p>
+    <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
+  </section>
+
+  <div class="filters">
+    <div class="wrap">
+      <div class="frow"><span class="flabel">Century</span><div class="chips" id="f-century"></div></div>
+      <div class="frow"><span class="flabel">Region</span><div class="chips" id="f-region"></div></div>
+      <div class="frow">
+        <span class="flabel">Refine</span>
+        <select id="f-format" aria-label="Format"></select>
+        <select id="f-inst" aria-label="Institution"></select>
+        <input type="search" id="f-q" placeholder="Search patron, center, scribe, shelfmark, artist…" aria-label="Search">
+        <label class="tog"><input type="checkbox" id="f-patron"> Patron recorded</label>
+        <label class="tog" title="Stars are saved in the page address. Bookmark the page to keep them."><input type="checkbox" id="f-fav"> <span class="star-ic">★</span> Starred only <span class="n" id="fav-n"></span></label>
+        <button class="btn ghost" id="reset">Reset</button>
+        <button class="btn" id="csv">Export CSV</button>
+        <span class="count" id="count"></span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <dialog id="viewer" class="viewer" aria-labelledby="viewer-title"><div class="vbar"><b id="viewer-title"></b><span style="display:flex;gap:var(--space-2)"><a class="btn ghost" id="viewer-open" target="_blank" rel="noopener">Open in new tab ↗</a><button class="btn ghost" id="viewer-close">Close</button></span></div><iframe id="viewer-frame" title="Image preview" allow="autoplay"></iframe></dialog>
+
+  <section class="wrap">
+    <div class="tbl-wrap">
+      <table class="cat" id="cat">
+        <thead><tr id="thead"></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="wrap method-sec">
+    <details class="method"><summary><h2 id="meth">Method and caveats</h2></summary>
+    <div class="notes">
+      <div>
+        <h3>Sources</h3>
+        <p>311 rows come from the <a href="https://cudl.lib.cam.ac.uk/collections/shahnama" target="_blank" rel="noopener">Shahnama Project collection in the Cambridge Digital Library</a>, read from its public IIIF collection and item metadata. The <a href="https://www.lib.cam.ac.uk/shahnama-project" target="_blank" rel="noopener">original Shahnama Project website is no longer functional</a>, and the transfer is a work in progress.</p>
+        <p>369 rows marked <span class="tag snp">SnP archive</span> come from the original Shahnama Project database, read from 845 archived manuscript record cards in the <a href="https://web.archive.org/web/2017/http://shahnama.caret.cam.ac.uk/new/jnama/card/cemanuscript:1928162730" target="_blank" rel="noopener">Internet Archive’s Wayback Machine</a>. They cover holdings not yet migrated to CUDL, including all 56 Topkapı Palace Library copies in range, Tehran (Gulistan, Majlis, Malek, Melli, Riza Abbasi), Tashkent, Dushanbe, St Petersburg, Lahore, Cairo and Istanbul (TİEM, University Library). Cards whose shelfmark already appeared in a CUDL row were skipped.</p>
+        <p>16 rows marked <span class="tag sup">Supplement</span> were checked against the holding institution’s catalogue or a scholarly source (linked in the row). The six Princeton rows come from Princeton University Library MARC records. Central Asian additions and corrections follow Comstock-Skipp, <a href="https://scholarlypublications.universiteitleiden.nl/access/item:3483637/view" target="_blank" rel="noopener">Scions of Turan</a> (Leiden, 2023); Topkapı notes follow Tanındı and Schmidt in <i>Shahnama Studies II</i> (2012).</p>
+      </div>
+      <div>
+        <h3>Coverage</h3>
+        <p>The old database recorded about 20,300 illustrations from 1,558 manuscripts across all periods (<a href="https://impact.ref.ac.uk/casestudies/CaseStudy.aspx?Id=17095" target="_blank" rel="noopener">REF impact case study</a>). Only about 845 manuscript cards survive in the web archive, so some holdings are still missing. It is a working corpus, not a census.</p>
+      </div>
+      <div>
+        <h3>How fields were derived</h3>
+        <ul>
+          <li><b>Date, folios, institution, scribe, bibliography</b>: copied from each record.</li>
+          <li><b>Region</b>: normalized from the recorded place and date (e.g. Shiraz before 1453 = Timurid; 1453–1503 = Turkman). Records without a place are marked Uncertain.</li>
+          <li><b>Patron</b>: only when the record names one. Blank means not stated, not “no patron”.</li>
+          <li><b>Paintings</b>: the bold figure is a total stated in the record text; the muted figure counts narrative paintings catalogued in the Shahnama Project record, which may be partial.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Limits</h3>
+        <ul>
+          <li>Text dates and painting dates can differ (e.g. Princeton Garrett 58G: text 1674, miniatures likely late 18th century).</li>
+          <li>Dispersed manuscripts appear once per holding; e.g. the Shah Tahmasp and “Big Head” Shahnamas have several fragment rows.</li>
+          <li>Region and patron fields were extracted with AI help from catalogue prose (CUDL rows) or derived by rule from place and date (SnP archive rows). Check them against the linked record before citing.</li>
+          <li><b>c.1390–1400 (borderline)</b> holds copies dated just before 1400, e.g. Cairo Dar al-Kutub Ta’rikh Farisi 73 (1393–94). <b>Undetermined</b> means the record gives no date or only a span wider than a century.</li>
+          <li>40 rows are known only from auction sales; their current location is not stated.</li>
+          <li>Archived SnP cards date from 2010–18. Some are flagged by the project itself as incomplete or unverified (noted in the row).</li>
+        </ul>
+      </div>
+    </div>
+    </details>
+  </section>
+</main>
+<footer><div class="wrap">Compiled November 2026. Metadata © respective institutions; Shahnama Project metadata licensed CC BY-NC 4.0 via Cambridge Digital Library.</div></footer>
+<div class="hero bottom"><img src="hero.jpg" alt="" loading="lazy"></div>
+
+<script src="data.js"></script>
+<script src="notes.js"></script>
+<script>
+(function(){
+const D = window.SN_DATA;
+let SNN=window.SN_NOTES||{};let IMGS=SNN.images||[];
+const EDIT_OK=['bibliography','title','date','center','region','patron','institution','folios','paintings_stated','scribe','note','url','century','format','place_recorded','shelfmark','extent'];
+function applyEdits(edits){
+  D.forEach(r=>{if(r._orig){Object.assign(r,r._orig);delete r._orig;delete r._edited;}});
+  (edits||[]).forEach(e=>{const r=D.find(x=>x.id===e.id);if(!r||!EDIT_OK.includes(e.field))return;let v=e.value;
+    if(e.field==='bibliography')v=v.split(/\s\|\s|\n/).map(x=>x.trim()).filter(Boolean);
+    else if(['folios','paintings_stated'].includes(e.field))v=v===''?null:(isNaN(+v)?v:+v);
+    r._orig=r._orig||{};if(!(e.field in r._orig))r._orig[e.field]=r[e.field];
+    r[e.field]=v;(r._edited=r._edited||[]).push(e.field);});
+}
+applyEdits(SNN.edits);
+const REG_ORDER=['Timurid','Turkman (Qara/Aq Qoyunlu)','Safavid','Shaybanid / Central Asia','Gilan / Caspian','Mughal & other Indian','Deccan','Ottoman','Mamluk (Cairo)','Iran (dynasty unspecified)','Uncertain'];
+const REG_COL={'Timurid':'#1e3a7b','Turkman (Qara/Aq Qoyunlu)':'#6b4fa0','Safavid':'#a8361f','Shaybanid / Central Asia':'#2f7d6d','Gilan / Caspian':'#4f8a3a','Mughal & other Indian':'#c0791b','Deccan':'#8a5a2b','Ottoman':'#9b2f5c','Mamluk (Cairo)':'#5b6b2e','Iran (dynasty unspecified)':'#7a7466','Uncertain':'#b3ab99'};
+const CEN_ORDER=['c.1390–1400 (borderline)','15th c.','16th c.','17th c.','Undetermined'];
+const FMT_ORDER=['Codex','Dispersed / partial','Single folio','Album / anthology','Other / unspecified'];
+const readFav=()=>{const m=location.hash.match(/(?:^#|&)stars=([^&]*)/);return new Set(m&&m[1]?decodeURIComponent(m[1]).split(',').filter(Boolean):[]);};
+let FAV=readFav();
+let NOTES=SNN.rows||[];let NOTED=new Map(NOTES.map(n=>[n.id,n]));
+const isFav=id=>FAV.has(id)||NOTED.has(id);
+const saveFav=()=>{const h=FAV.size?'#stars='+encodeURIComponent([...FAV].join(',')):' ';try{history.replaceState(null,'',h===' '?location.pathname+location.search:h);}catch(e){location.hash=h.trim();}};
+const S={cent:new Set(),reg:new Set(),fmt:'__cod',inst:'',q:'',patron:false,fav:false,sort:'year_start',dir:1,open:null};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const paint=r=>r.paintings_stated??r.paintings_catalogued??-1;
+
+// stats
+const insts=new Set(D.map(r=>r.institution));
+const codices=D.filter(r=>r.format==='Codex').length;
+const withPat=D.filter(r=>r.patron).length;
+const colo=D.filter(r=>r.date_basis==='Colophon-dated').length;
+$('stats').innerHTML=[[D.length,'records'],[codices,'complete or partial codices'],[insts.size,'holding institutions'],[colo,'colophon-dated'],[withPat,'with a named patron']].map(([n,l])=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
+
+// chips
+function chips(el,order,key,set){
+  const counts={};D.forEach(r=>counts[r[key]]=(counts[r[key]]||0)+1);
+  $(el).innerHTML=order.filter(k=>counts[k]).map(k=>`<button class="chip" aria-pressed="false" data-v="${esc(k)}">${key==='region'?`<span class="dot" style="background:${REG_COL[k]};margin:0"></span>`:''}${esc(k)} <span class="n">${counts[k]}</span></button>`).join('');
+  $(el).addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;const v=b.dataset.v;set.has(v)?set.delete(v):set.add(v);S.open=null;sync();});
+}
+chips('f-century',CEN_ORDER,'century',S.cent);
+chips('f-region',REG_ORDER,'region',S.reg);
+$('f-format').innerHTML='<option value="">All formats</option><option value="__cod">Codices + dispersed codices</option>'+FMT_ORDER.filter(f=>D.some(r=>r.format===f)).map(f=>`<option>${esc(f)}</option>`).join('');
+$('f-inst').innerHTML='<option value="">All institutions</option>'+[...insts].sort().map(i=>`<option>${esc(i)}</option>`).join('');
+$('f-format').value='__cod';
+$('f-format').onchange=e=>{S.fmt=e.target.value;S.open=null;render();};
+$('f-inst').onchange=e=>{S.inst=e.target.value;S.open=null;render();};
+$('f-q').oninput=e=>{S.q=e.target.value.toLowerCase();S.open=null;render();};
+$('f-patron').onchange=e=>{S.patron=e.target.checked;S.open=null;render();};
+$('f-fav').onchange=e=>{S.fav=e.target.checked;S.open=null;render();};
+$('reset').onclick=()=>{S.fav=false;$('f-fav').checked=false;S.cent.clear();S.reg.clear();S.fmt='__cod';S.inst='';S.q='';S.patron=false;S.open=null;$('f-format').value='__cod';$('f-inst').value='';$('f-q').value='';$('f-patron').checked=false;sync();};
+
+// columns
+const linkLabel=r=>{try{const h=new URL(r.url).hostname.replace(/^www\./,'');return /cudl/.test(h)?'CUDL':/princeton/.test(h)?'Princeton':/archive\.org/.test(h)?'SnP (archived)':/wikidata/.test(h)?'Wikidata':/leiden/.test(h)?'Leiden PDF':h.split('.').slice(-2,-1)[0];}catch(e){return 'link';}};
+const COLS=[
+ {k:'fav',l:'<span class="sr">Starred</span>★',f:r=>`<button class="star${isFav(r.id)?' on':''}" data-fav="${esc(r.id)}" aria-pressed="${isFav(r.id)}" aria-label="${isFav(r.id)?'Unstar':'Star'} ${esc(r.title)}" title="${NOTED.has(r.id)&&!FAV.has(r.id)?'Has a note in your sheet':isFav(r.id)?'Remove star':'Star this manuscript'}">${isFav(r.id)?'★':'☆'}</button>`,sv:r=>isFav(r.id)?0:1},
+ {k:'title',l:'Manuscript',f:r=>`<span class="t-title">${esc(r.title)}</span><span class="t-shelf">${esc(r.shelfmark)}</span>${r.id.startsWith('SNP-')?' <span class="tag snp">SnP archive</span>':r.supplement?' <span class="tag sup">Supplement</span>':''}`},
+ {k:'century',l:'Century',f:r=>esc(r.century),sv:r=>CEN_ORDER.indexOf(r.century)},
+ {k:'year_start',l:'Date',f:r=>`${esc(r.date)}<span class="t-shelf">${esc(r.date_basis)}</span>`},
+ {k:'center',l:'Production center',f:r=>esc(r.center==='Unspecified'?'—':r.center)},
+ {k:'region',l:'Region / dynasty',f:r=>`<span class="reg"><span class="dot" style="background:${REG_COL[r.region]}"></span>${esc(r.region)}</span>`,sv:r=>REG_ORDER.indexOf(r.region)},
+ {k:'patron',l:'Patron / court',f:r=>r.patron?esc(r.patron):'<span class="faint">not stated</span>',sv:r=>r.patron||'\uffff'},
+ {k:'folios',l:'Folios',num:1,f:r=>r.folios??'<span class="faint">n.a.</span>',sv:r=>r.folios??-1},
+ {k:'paint',l:'Paintings',num:1,f:r=>{const a=r.paintings_stated,b=r.paintings_catalogued;let s=a!=null?`<b>${a}</b>`:'';if(b!=null&&b>0)s+=` <span class="muted" title="Narrative paintings catalogued in the Shahnama Project record">(${b} SnP)</span>`;return s||'<span class="faint">n.a.</span>';},sv:paint},
+ {k:'institution',l:'Holding institution',f:r=>esc(r.institution)},
+ {k:'format',l:'Format',f:r=>`<span class="tag">${esc(r.format)}</span>`,sv:r=>FMT_ORDER.indexOf(r.format)},
+ {k:'url',l:'Link',f:r=>r.url?`<a class="rlink" href="${esc(r.url)}" target="_blank" rel="noopener" title="${esc(r.source)}">${esc(linkLabel(r))} ↗</a>`:'<span class="faint">none</span>',sv:r=>linkLabel(r)}
+];
+$('thead').innerHTML=COLS.map(c=>`<th data-k="${c.k}" class="${c.num?'num':''}" scope="col" aria-sort="none">${c.l}<span class="arr">↕</span></th>`).join('');
+$('thead').addEventListener('click',e=>{const th=e.target.closest('th');if(!th)return;const k=th.dataset.k;if(S.sort===k)S.dir*=-1;else{S.sort=k;S.dir=1;}render();});
+
+function filtered(base){
+  return D.filter(r=>{
+    if(!base&&S.cent.size&&!S.cent.has(r.century))return false;
+    if(!base&&S.reg.size&&!S.reg.has(r.region))return false;
+    if(S.fav&&!isFav(r.id))return false;
+    if(S.fav){}else if(S.fmt==='__cod'){if(!(r.format==='Codex'||r.format==='Dispersed / partial'))return false;}
+    else if(S.fmt&&r.format!==S.fmt)return false;
+    if(S.inst&&r.institution!==S.inst)return false;
+    if(S.patron&&!r.patron)return false;
+    if(S.q){const hay=[r.title,r.shelfmark,r.center,r.place_recorded,r.patron,r.scribe,r.note,r.institution,r.date,(r.bibliography||[]).join(' ')].join(' ').toLowerCase();if(!hay.includes(S.q))return false;}
+    return true;});
+}
+function sortRows(rows){
+  const c=COLS.find(c=>c.k===S.sort);const sv=c.sv||(r=>r[c.k]);
+  return rows.sort((a,b)=>{let x=sv(a),y=sv(b);const nx=(x==null||x===''),ny=(y==null||y==='');if(nx!==ny)return nx?1:-1;if(nx)x='';if(ny)y='';
+    const cmp=(typeof x==='number'&&typeof y==='number')?x-y:String(x).localeCompare(String(y));
+    return cmp*S.dir||(a.year_start-b.year_start);});
+}
+function detail(r){
+  const bib=(r.bibliography||[]).length?`<ol class="bib">${r.bibliography.map(b=>`<li>${esc(b)}</li>`).join('')}</ol>`:'<span class="faint">None listed in the record.</span>';
+  return `<tr class="detail"><td colspan="${COLS.length}"><div class="dgrid">
+   <dl><dt>Summary</dt><dd>${esc(r.note)||'—'}</dd><dt>Extent (as recorded)</dt><dd>${esc(r.extent)||'—'}</dd><dt>Place as recorded</dt><dd>${esc(r.place_recorded)||'<span class="faint">not recorded</span>'}</dd><dt>Scribe</dt><dd>${esc(r.scribe)||'<span class="faint">not stated</span>'}</dd></dl>
+   <dl><dt>Bibliography ${r.supplement&&!r.id.startsWith('SNP-')?'':'(Shahnama Project record)'}</dt><dd>${bib}</dd>${r._edited?`<dt>Your edits</dt><dd class="small">Edited from your sheet: ${esc(r._edited.join(', '))}</dd>`:''}<dt>Source record</dt><dd><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.source)} ↗</a></dd></dl>
+  </div></td></tr>`;
+}
+const NS={tag:''};
+function driveInfo(u){if(!u)return null;let m=u.match(/\/(file|presentation|document|spreadsheets)\/d\/([\w-]{20,})/)||u.match(/[?&]id=([\w-]{20,})/);
+  if(!m)return null;const kind=m.length===3?m[1]:'file',id=m.length===3?m[2]:m[1];
+  return{id,thumb:`https://drive.google.com/thumbnail?id=${id}&sz=w480`,view:kind==='presentation'?`https://docs.google.com/presentation/d/${id}/embed`:kind==='document'?`https://docs.google.com/document/d/${id}/preview`:`https://drive.google.com/file/d/${id}/preview`};}
+function host(u){try{return new URL(u).hostname.replace(/^www\./,'');}catch(e){return 'link';}}
+function preview(link,title){if(!link)return '';const d=driveInfo(link);if(!d)return '';const view=d?d.view:link;
+  const tile=`<span class="ph">Preview · ${esc(host(link))}</span>`;
+  return `<button class="thumb" data-view="${esc(view)}" data-link="${esc(link)}" data-title="${title}" aria-label="Preview ${title}">${d?`<img src="${esc(d.thumb)}" alt="" loading="lazy" onerror="this.outerHTML='<span class=&quot;ph&quot;>Preview · ${esc(host(link))}</span>'">`:tile}</button>`;}
+function imgItem(x){const label=esc([x.folio,x.scene].filter(Boolean).join(' · ')||'file');const d=driveInfo(x.link);
+  return `<li>${preview(x.link,label)}
+  ${x.link?`<a href="${esc(x.link)}" target="_blank" rel="noopener">${label} ↗</a>`:label}${x.type?` <span class="ntag">${esc(x.type)}</span>`:''}
+  ${x.obs?`<div class="small"><b>Obs</b> ${esc(x.obs)}</div>`:''}${x.interp?`<div class="small"><b>Interp</b> ${esc(x.interp)}</div>`:''}</li>`;}
+function renderNotes(){
+  const byId=new Map(D.map(r=>[r.id,r]));
+  const ids=[...new Set([...NOTES.map(n=>n.id),...FAV])];
+  const items=ids.map(id=>{const r=byId.get(id)||{},n=NOTED.get(id)||{};return{id,r,n,title:r.title||n.title||id,shelf:r.shelfmark||n.shelfmark||'',inst:r.institution||n.institution||'',date:r.date||'',tags:n.tags||[],note:n.note||'',inSheet:NOTED.has(id)};});
+  const tags=[...new Set(items.flatMap(i=>i.tags))].sort();
+  if(NS.tag&&!tags.includes(NS.tag))NS.tag='';
+  $('tag-chips').innerHTML=tags.length?tags.map(t=>`<button class="chip" aria-pressed="${NS.tag===t}" data-tag="${esc(t)}">${esc(t)} <span class="n">${items.filter(i=>i.tags.includes(t)).length}</span></button>`).join(''):'';
+  const shown=items.filter(i=>!NS.tag||i.tags.includes(NS.tag));
+  const newN=items.filter(i=>!i.inSheet).length;
+  $('notes-sum').textContent=`${items.length} starred · ${items.filter(i=>i.note).length} with notes${newN?` · ${newN} not yet in sheet`:''}`;
+  $('copy-new').disabled=!newN;$('copy-new').style.opacity=newN?1:.5;
+  $('ncards').innerHTML=shown.length?shown.map(i=>`<article class="ncard"><h3>${esc(i.title)}<span class="t-shelf">${esc(i.shelf)}${i.date?' · '+esc(i.date):''}</span><span class="t-shelf">${esc(i.inst)}</span></h3>
+    ${i.tags.length?`<div class="ntags">${i.tags.map(t=>`<span class="ntag">${esc(t)}</span>`).join('')}</div>`:''}
+    <p class="${i.note?'':'nonote'}">${i.note?esc(i.note):(i.inSheet?'No note yet.':'Not in the sheet yet. Use "Copy new starred rows".')}</p>
+    ${(()=>{const im=IMGS.filter(x=>x.id===i.id);return im.length?`<details class="nimgs"><summary>${im.length} linked file${im.length>1?'s':''}</summary><ul>${im.map(imgItem).join('')}</ul></details>`:'';})()}
+    <div class="nact">${byId.has(i.id)?`<button data-show="${esc(i.id)}">Show in table</button>`:''}<span class="faint small">${esc(i.id)}</span></div></article>`).join(''):'<p class="muted">Star a manuscript in the table, or add a row to your sheet, to see it here.</p>';
+}
+$('sheet-link').href=SNN.sheetUrl||'#';
+function openViewer(b){$('viewer-title').textContent=b.dataset.title;$('viewer-open').href=b.dataset.link||b.dataset.view;$('viewer-frame').src=b.dataset.view;$('viewer').showModal();}
+$('ncards').addEventListener('click',e=>{const b=e.target.closest('.thumb');if(!b)return;openViewer(b);});
+$('viewer-close').onclick=()=>$('viewer').close();$('viewer').addEventListener('close',()=>{$('viewer-frame').src='about:blank';});
+function parseCSVraw(t){const rows=[];let row=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=c;}else if(c==='"')q=true;else if(c===','){row.push(f);f='';}else if(c==='\n'||c==='\r'){if(c==='\r'&&t[i+1]==='\n')i++;row.push(f);rows.push(row);row=[];f='';}else f+=c;}if(f||row.length){row.push(f);rows.push(row);}return rows;}
+function parseCSV(t){const rows=[];let row=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];
+  if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=c;}
+  else if(c==='"')q=true;else if(c===','){row.push(f);f='';}else if(c==='\n'||c==='\r'){if(c==='\r'&&t[i+1]==='\n')i++;row.push(f);rows.push(row);row=[];f='';}else f+=c;}
+  if(f||row.length){row.push(f);rows.push(row);}
+  const h=(rows.shift()||[]).map(x=>x.trim().toLowerCase());
+  const out=rows.map(r=>Object.fromEntries(h.map((k,j)=>[k,(r[j]||'').trim()]))).filter(r=>r.id&&!r.id.startsWith('(example)'));out.cols=h.filter(Boolean);return out;}
+const RESERVED=['notes','images','edits','questions','how to use','title subheading'];
+const XS={tabs:[],tag:{},open:new Set()};
+const CITE=['editor','place','publication title','publisher','year','extra'];const FIELD_ORDER=[...CITE,'note','notes'];
+const NOTES_SEC=document.getElementById('notes-sec');
+const SHEET=SNN.sheetUrl||'https://docs.google.com/spreadsheets/d/1Xy258S_qX8ioGQyaftq02O2XKHkcuR9ylcWEVsEGZvk/edit';
+const tabUrl=t=>SHEET.replace(/#.*$/,'')+(t.gid?'#gid='+t.gid:'');
+function bandSec(t){const open=t.open?' open':'';
+  const body=t.kind==='text'?`<div class="xs-text">${t.lines.map(l=>l.trim()?`<p>${esc(l)}</p>`:'').join('')}</div>`
+    :`<div class="xs-imgs">${t.lines.map(([u,h])=>{if(!u)return '';const d=driveInfo(u);const src=d?`https://drive.google.com/thumbnail?id=${d.id}&sz=w2000`:u;const img=`<img src="${esc(src)}" alt="" loading="lazy">`;return h?`<a href="${esc(h)}" target="_blank" rel="noopener">${img}</a>`:img;}).join('')}</div>`;
+  if(t.kind==='image')return `<section class="xs-image"><div class="wrap">${body}</div></section>`;
+  return `<section class="xs-band"><div class="wrap notes-sec"><details${open}><summary><h2>${esc(t.title)}</h2></summary>${body}</details></div></section>`;}
+function renderExtra(){
+  if(NOTES_SEC.parentNode)NOTES_SEC.remove();
+  const hasNotes=XS.tabs.some(t=>t.kind==='notes');
+  $('extra-sections').innerHTML=(hasNotes?'':'<div id="notes-slot"></div>')+XS.tabs.map((t,ti)=>{
+    if(t.kind==='notes')return '<div id="notes-slot"></div>';
+    if(t.kind==='text'||t.kind==='image')return bandSec(t);
+    const tags=[...new Set(t.rows.flatMap(r=>r._tags))].sort();const on=XS.tag[t.name]||'';
+    const rows=t.rows.filter(r=>!on||r._tags.includes(on));
+    const extraCols=t.cols.filter(c=>!['id','title','link','tags',...FIELD_ORDER].includes(c));
+    const fld=(r,c)=>r[c]?`<p class="fld${CITE.includes(c)?' cite':''}">${CITE.includes(c)?'':`<b>${esc(c)}</b> `}${/^https?:\/\//.test(r[c])?preview(r[c],esc(c))+`<a href="${esc(r[c])}" target="_blank" rel="noopener">${esc(r[c])}</a>`:esc(r[c])}</p>`:'';
+    return `<section class="wrap notes-sec" style="--sec:${['var(--gold)','var(--vermilion)','#2f7d6b','#7a4f9a','#b0702a'][ti%5]}"><details${XS.open.has(t.name)?' open':''} data-sec="${esc(t.name)}"><summary><h2>${esc(t.name)}</h2> <span class="muted">${t.rows.length} item${t.rows.length===1?'':'s'}</span></summary>
+    <div class="notes-bar"><a class="btn ghost" href="${esc(tabUrl(t))}" target="_blank" rel="noopener">Open Google Sheet ↗</a><button class="btn ghost copy-tab" data-tab="${ti}">Copy this section's rows</button></div>
+    ${tags.length?`<div class="chips xs-chips" data-tab="${ti}" style="margin:0 0 var(--space-3)">${tags.map(g=>`<button class="chip" aria-pressed="${on===g}" data-tag="${esc(g)}">${esc(g)} <span class="n">${t.rows.filter(r=>r._tags.includes(g)).length}</span></button>`).join('')}</div>`:'<div style="height:var(--space-3)"></div>'}
+    <div class="ncards">${rows.length?rows.map(r=>{const d=driveInfo(r.link);const im=IMGS.filter(x=>x.id===r.id);const title=esc(r.title||r.id);
+      return `<article class="ncard"><h3>${title}<span class="t-shelf">${esc(r.id)}</span></h3>
+      ${r._tags.length?`<div class="ntags">${r._tags.map(g=>`<span class="ntag">${esc(g)}</span>`).join('')}</div>`:''}
+      <div class="flds">${FIELD_ORDER.map(c=>fld(r,c)).join('')}</div>
+      ${r.link?`<div>${preview(r.link,title)}<a href="${esc(r.link)}" target="_blank" rel="noopener" class="small">Open ↗</a></div>`:''}
+      <div class="flds">${extraCols.map(c=>fld(r,c)).join('')}</div>
+      ${im.length?`<details class="nimgs"><summary>${im.length} linked file${im.length>1?'s':''}</summary><ul>${im.map(imgItem).join('')}</ul></details>`:''}
+      </article>`;}).join(''):'<p class="muted">No rows yet. Add some in the sheet.</p>'}</div></details></section>`;}).join('');
+  const slot=$('notes-slot');if(slot)slot.remove();$('notes-band').appendChild(NOTES_SEC);
+}
+$('extra-sections').addEventListener('toggle',e=>{const d=e.target;if(d.dataset&&d.dataset.sec){d.open?XS.open.add(d.dataset.sec):XS.open.delete(d.dataset.sec);}},true);
+$('extra-sections').addEventListener('click',e=>{const th=e.target.closest('.thumb');if(th){openViewer(th);return;}
+  const c=e.target.closest('.xs-chips .chip');if(!c)return;const t=XS.tabs[+c.closest('.xs-chips').dataset.tab];XS.tag[t.name]=XS.tag[t.name]===c.dataset.tag?'':c.dataset.tag;renderExtra();});
+async function getRaw(n){const t=await fetch(`https://docs.google.com/spreadsheets/d/1Xy258S_qX8ioGQyaftq02O2XKHkcuR9ylcWEVsEGZvk/gviz/tq?tqx=out:csv&headers=0&sheet=${encodeURIComponent(n)}&t=${Date.now()}`).then(r=>{if(!r.ok)throw 0;return r.text();});return parseCSVraw(t);}
+async function loadTabs(get){
+  const html=await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vRgwgcpdC_cX9C-dCVTFPWqyQ-pKOYhlXNwdXTWQ1am3vKQR5BWRjDfM3JDyrSXgwmlVb8r0JZNvg9P/pubhtml?t='+Date.now()).then(r=>r.text());
+  const all=[...html.matchAll(/items\.push\(\{name: "((?:[^"\\]|\\.)*)", pageUrl: "[^"]*", gid: "(\d+)"/g)].map(m=>({name:JSON.parse('"'+m[1]+'"'),gid:m[2]}));
+  const nt=all.find(x=>x.name.trim().toLowerCase()==='notes');if(nt){const a=NOTES_SEC.querySelector('#sheet-link');if(a)a.href=tabUrl(nt);}
+  const ft=all.find(x=>/^footer[- ]?text$/i.test(x.name.trim()));
+  if(ft)getRaw(ft.name).then(rows=>{const l=rows.map(r=>r[0]||'');while(l.length&&!l[l.length-1].trim())l.pop();if(l.length)document.querySelector('footer .wrap').innerHTML=l.map(esc).join('<br>');}).catch(()=>{});
+  XS.tabs=(await Promise.all(all.map(async({name:n,gid})=>{const low=n.trim().toLowerCase();
+    if(low==='notes')return{kind:'notes',name:n,gid};
+    if(RESERVED.includes(low)||/^footer[- ]?text$/.test(low))return null;
+    const m=n.trim().match(/^(text|image)(?:[- ](open|closed))?\s*:\s*(.*)$/i);
+    try{if(m){const rows=await getRaw(n);const kind=m[1].toLowerCase();
+        return{kind,name:n,gid,title:m[3]||n,open:(m[2]||'').toLowerCase()==='open',lines:kind==='text'?rows.map(r=>r[0]||''):rows.map(r=>[(r[0]||'').trim(),(r[1]||'').trim()])};}
+      const rows=await get(n,true);return{kind:'cards',name:n,gid,cols:rows.cols,rows:rows.map(r=>({...r,_tags:(r.tags||'').split(',').map(x=>x.trim()).filter(Boolean)}))};}catch(e){return null;}}))).filter(Boolean);
+  renderExtra();
+}
+async function loadLive(){const SID='1Xy258S_qX8ioGQyaftq02O2XKHkcuR9ylcWEVsEGZvk';
+  const get=n=>fetch(`https://docs.google.com/spreadsheets/d/${SID}/gviz/tq?tqx=out:csv&headers=1&sheet=${encodeURIComponent(n)}&t=${Date.now()}`).then(r=>{if(!r.ok)throw 0;return r.text();}).then(parseCSV);
+  try{const [n,im,ed]=await Promise.all([get('Notes'),get('Images'),get('Edits')]);
+    NOTES=n.map(r=>({id:r.id,shelfmark:r.shelfmark||'',title:r.title||'',institution:r.institution||'',tags:(r.tags||'').split(',').map(t=>t.trim()).filter(Boolean),note:r.note||''}));
+    NOTED=new Map(NOTES.map(x=>[x.id,x]));
+    IMGS=im.map(r=>({id:r.id,folio:r.folio||'',scene:r.scene||'',link:r.link||'',type:r['building type']||'',obs:r.observation||'',interp:r.interpretation||''}));
+    applyEdits(ed.map(r=>({id:r.id,field:(r.field||'').toLowerCase().replace(/ /g,'_'),value:r['new value']||''})));
+    $('notes-sync').textContent='';
+    render();
+    loadTabs(get).catch(()=>{});
+    fetch(`https://docs.google.com/spreadsheets/d/${SID}/gviz/tq?tqx=out:csv&headers=0&sheet=${encodeURIComponent('title subheading')}&range=A1:A200&t=${Date.now()}`).then(r=>r.ok?r.text():'').then(t=>{const lines=parseCSVraw(t).map(r=>r[0]||'');while(lines.length&&!lines[lines.length-1].trim())lines.pop();$('thesis-sub').innerHTML=lines.map(l=>esc(l)).join('<br>');}).catch(()=>{});
+  }catch(e){$('notes-sync').textContent=`Could not reach the live sheet; showing the copy saved ${SNN.synced||''}.`;}
+}
+$('notes-sync').textContent='';
+$('tag-chips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;NS.tag=NS.tag===b.dataset.tag?'':b.dataset.tag;renderNotes();});
+$('ncards').addEventListener('click',e=>{const b=e.target.closest('[data-show]');if(!b)return;const id=b.dataset.show;const r=D.find(x=>x.id===id);
+  S.cent.clear();S.reg.clear();S.inst='';$('f-inst').value='';S.fmt='';$('f-format').value='';S.q=(r.shelfmark||'').toLowerCase();$('f-q').value=r.shelfmark||'';S.open=id;sync();
+  const tr=document.querySelector(`tr.row[data-id="${CSS.escape(id)}"]`);if(tr){tr.scrollIntoView({behavior:'smooth',block:'center'});tr.focus({preventScroll:true});}});
+document.addEventListener('click',async e=>{const b=e.target.closest('.copy-tab');if(!b)return;const t=XS.tabs[+b.dataset.tab];
+  const tsv=[t.cols.join('\t')].concat(t.rows.map(r=>t.cols.map(c=>String(r[c]||'').replace(/[\t\n]/g,' ')).join('\t'))).join('\n');let ok=false;
+  try{await navigator.clipboard.writeText(tsv);ok=true;}catch(err){const ta=document.createElement('textarea');ta.value=tsv;document.body.appendChild(ta);ta.select();try{ok=document.execCommand('copy');}catch(e2){}ta.remove();}
+  const old=b.textContent;b.textContent=ok?'Copied':'Copy failed';setTimeout(()=>b.textContent=old,2500);});
+$('copy-new').onclick=async()=>{const byId=new Map(D.map(r=>[r.id,r]));
+  const tsv=[...FAV].filter(id=>!NOTED.has(id)).map(id=>{const r=byId.get(id)||{};return[id,r.shelfmark||'',(r.title||'')+(r.date?', '+r.date:''),r.institution||'','',''].map(v=>String(v).replace(/[\t\n]/g,' ')).join('\t');}).join('\n');
+  const box=$('copy-box');box.value=tsv;box.hidden=false;box.select();let ok=false;
+  try{await navigator.clipboard.writeText(tsv);ok=true;}catch(e){try{ok=document.execCommand('copy');}catch(e2){}}
+  $('copy-new').textContent=ok?'Copied. Paste into the first empty row of the sheet':'Select the text below and copy it';
+  setTimeout(()=>{$('copy-new').textContent='Copy new starred rows for sheet';},4000);};
+function render(){
+  const rows=sortRows(filtered());
+  document.querySelectorAll('#thead th').forEach(th=>{const on=th.dataset.k===S.sort;th.classList.toggle('sorted',on);th.querySelector('.arr').textContent=on?(S.dir>0?'↑':'↓'):'↕';th.setAttribute('aria-sort',on?(S.dir>0?'ascending':'descending'):'none');});
+  const nf=D.filter(r=>isFav(r.id)).length;$('fav-n').textContent=nf?`(${nf})`:'';renderNotes();
+  $('count').textContent=`${rows.length} of ${D.length} records`;
+  $('tbody').innerHTML=rows.length?rows.map(r=>`<tr class="row${S.open===r.id?' open':''}" data-id="${esc(r.id)}" tabindex="0">${COLS.map(c=>`<td class="${c.num?'num':''}${c.k==='fav'?' c-fav':''}">${c.f(r)}</td>`).join('')}</tr>${S.open===r.id?detail(r):''}`).join(''):`<tr><td colspan="${COLS.length}" class="empty">No manuscripts match these filters. <button class="btn ghost" onclick="document.getElementById('reset').click()">Reset filters</button></td></tr>`;
+  window.__rows=rows; renderMatrix();
+}
+$('tbody').addEventListener('click',e=>{const sb=e.target.closest('button.star');if(sb){const id=sb.dataset.fav;if(NOTED.has(id)&&!FAV.has(id))return;FAV.has(id)?FAV.delete(id):FAV.add(id);saveFav();render();const nb=document.querySelector(`button.star[data-fav="${CSS.escape(id)}"]`);if(nb)nb.focus();return;}if(e.target.closest('a,button'))return;const tr=e.target.closest('tr.row');if(!tr)return;S.open=S.open===tr.dataset.id?null:tr.dataset.id;render();});
+$('tbody').addEventListener('keydown',e=>{if(e.key==='Enter'){const tr=e.target.closest('tr.row');if(tr){S.open=S.open===tr.dataset.id?null:tr.dataset.id;render();}}});
+
+function renderMatrix(){
+  const cents=CEN_ORDER.filter(c=>D.some(r=>r.century===c));
+  const B=filtered(true);const m={};B.forEach(r=>{m[r.region]=m[r.region]||{};m[r.region][r.century]=(m[r.region][r.century]||0)+1;});
+  const max=Math.max(1,...Object.values(m).flatMap(o=>Object.values(o)));
+  const one=S.cent.size===1&&S.reg.size===1?[...S.reg][0]+'|'+[...S.cent][0]:null;
+  let h=`<thead><tr><th>Region / dynasty</th>${cents.map(c=>`<th>${c}</th>`).join('')}<th>Total</th></tr></thead><tbody>`;
+  REG_ORDER.filter(g=>m[g]).forEach(g=>{let tot=0;h+=`<tr><td><span class="dot" style="background:${REG_COL[g]}"></span>${g}</td>`;
+    cents.forEach(c=>{const n=m[g][c]||0;tot+=n;const a=n?0.12+0.6*n/max:0;h+=n?`<td class="cell${one===g+'|'+c?' active':''}" data-g="${esc(g)}" data-c="${c}" style="background:color-mix(in oklab, ${REG_COL[g]} ${Math.round(a*100)}%, transparent);${a>0.45?'color:#fff;font-weight:700':''}">${n}</td>`:`<td class="zero">·</td>`;});
+    h+=`<td><b>${tot}</b></td></tr>`;});
+  $('matrix').innerHTML=h+'</tbody>';
+}
+$('matrix').addEventListener('click',e=>{const td=e.target.closest('td.cell');if(!td)return;const g=td.dataset.g,c=td.dataset.c;const isOn=S.reg.size===1&&S.reg.has(g)&&S.cent.size===1&&S.cent.has(c);S.reg.clear();S.cent.clear();if(!isOn){S.reg.add(g);S.cent.add(c);}S.open=null;sync();document.querySelector('.filters').scrollIntoView({behavior:'smooth'});});
+
+function sync(){
+  document.querySelectorAll('#f-century .chip').forEach(b=>b.setAttribute('aria-pressed',S.cent.has(b.dataset.v)));
+  document.querySelectorAll('#f-region .chip').forEach(b=>b.setAttribute('aria-pressed',S.reg.has(b.dataset.v)));
+  render();
+}
+$('csv').onclick=()=>{
+  const H=['starred','id','title','shelfmark','institution','century','date','date_basis','year_start','year_end','place_recorded','center','region','patron','format','extent','folios','paintings_stated','paintings_catalogued_snp','scribe','note','bibliography','source','url'];
+  const q=v=>`"${String(v??'').replace(/"/g,'""')}"`;
+  const lines=[H.join(',')].concat(window.__rows.map(r=>[isFav(r.id)?'yes':'',r.id,r.title,r.shelfmark,r.institution,r.century,r.date,r.date_basis,r.year_start,r.year_end,r.place_recorded,r.center,r.region,r.patron,r.format,r.extent,r.folios,r.paintings_stated,r.paintings_catalogued,r.scribe,r.note,(r.bibliography||[]).join(' | '),r.source,r.url].map(q).join(',')));
+  const blob=new Blob(['\ufeff'+lines.join('\n')],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='shahnama-manuscripts-1400-1700.csv';document.body.appendChild(a);a.click();a.remove();
+};
+sync();
+loadLive();
+})();
+</script>
+</body>
+</html>
